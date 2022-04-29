@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Bouncing Ball"
+config/description="An app created by blizzwind."
+run/main_scene="res://main.tscn"
+boot_splash/image="res://sprite/splash.png"
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
+config/icon="res://sprite/icon.svg"
+
+[display]
+
+window/size/width=1600
+window/size/height=900
+window/size/resizable=false
+window/size/fullscreen=true
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_clear_color=Color( 0, 0, 0, 1 )
+environment/default_environment="res://env.tres"
